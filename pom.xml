@@ -56,6 +56,28 @@
             <artifactId>selenium-chrome-driver</artifactId>
             <version>${selenium-version}</version>
         </dependency>
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>maven-cucumber-reporting</artifactId>
+            <version>5.0.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>2.8.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -65,6 +87,39 @@
                 <configuration>
                     <source>1.8</source>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>5.0.0</version>
+                <executions>
+                    <execution>
+                        <id>execution</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <projectName>School_Of_Automation_iteration2</projectName>
+                            <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+
+                            <!-- optional, defaults to outputDirectory if not specified -->
+                            <inputDirectory>${project.build.directory}</inputDirectory>
+                            <jsonFiles>
+                                <!-- supports wildcard or name pattern -->
+                                <param>**/*.json</param>
+                            </jsonFiles>
+                            <!-- optional, defaults to outputDirectory if not specified -->
+
+                            <!-- optional, set true to group features by its Ids -->
+                            <mergeFeaturesById>false</mergeFeaturesById>
+                            <!-- optional, set true to get a final report with latest results of the same test from different test runs -->
+                            <mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
+                            <!-- optional, set true to fail build on test failures -->
+                            <checkBuildResult>false</checkBuildResult>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
