@@ -1,10 +1,11 @@
 package com.demoqa.shop.hooks;
 
+
 import com.demoqa.shop.pages.HomePage;
 import com.demoqa.shop.util.Browser;
 import com.demoqa.shop.util.Context;
 import com.demoqa.shop.util.ScenarioContext;
-//import com.demoqa.shop.util.ScreenshotUtil;
+import com.demoqa.shop.util.ScreenshotUtil;
 import io.cucumber.java.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -18,7 +19,7 @@ public class Hooks {
     @Before
     public void before(Scenario scenario) {
         log.info("Execution of scenario '{}' has been started", scenario.getName());
-        //ScreenshotUtil.setScenario(scenario); //TO BE UNCOMMENTED BY T.BALMUS WITH SCREENSHOT IMPLEMENTATION
+        ScreenshotUtil.setScenario(scenario);
         WebDriver browser = Browser.getBrowser();
         HomePage homePage = new HomePage(browser);
         PageFactory.initElements(browser, homePage);// TO BE DELETED BY A.DIOGOTI AFTER ADDING IT TO BASEPAGE
