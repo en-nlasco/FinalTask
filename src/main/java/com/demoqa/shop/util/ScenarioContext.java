@@ -1,9 +1,13 @@
 package com.demoqa.shop.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class ScenarioContext {
+    Logger log = LoggerFactory.getLogger(ScenarioContext.class);
 
     private static ScenarioContext instance;
 
@@ -31,5 +35,10 @@ public class ScenarioContext {
 
     public Boolean isContains(Context key) {
         return scenarioContext.containsKey(key.toString());
+    }
+
+    public void clearScenarioContext() {
+        scenarioContext.clear();
+        log.info("Scenario Context was cleared");
     }
 }

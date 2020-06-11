@@ -12,7 +12,6 @@ public class PropertyReader {
     static Logger log = LoggerFactory.getLogger(PropertyReader.class);
     private final static String path = "src\\main\\resources\\atf.properties";
     private static Properties properties;
-    private static FileInputStream input;
 
     private PropertyReader() {
         try {
@@ -26,7 +25,7 @@ public class PropertyReader {
         }
     }
 
-    public static Properties getProperties() {
+    private static Properties getProperties() {
         if (properties == null)
             new PropertyReader();
         return properties;

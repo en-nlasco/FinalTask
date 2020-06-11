@@ -13,7 +13,7 @@ public class Browser {
 
     private static WebDriver instance;
 
-    public static WebDriver createBrowser() {
+    private static WebDriver createBrowser() {
 
         String browserName = PropertyReader.getBrowserName();
         WebDriver driver = null;
@@ -50,6 +50,9 @@ public class Browser {
         if (instance != null) {
             instance.close();
             instance.quit();
+            log.info("'Browser' has been closed");
+        } else {
+            log.info("There is no 'Browser' to be closed");
         }
     }
 }
