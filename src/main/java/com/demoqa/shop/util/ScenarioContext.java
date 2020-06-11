@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class ScenarioContext {
 
-    public static ScenarioContext instance;
+    private static ScenarioContext instance;
 
     private Map<String, Object> scenarioContext;
 
