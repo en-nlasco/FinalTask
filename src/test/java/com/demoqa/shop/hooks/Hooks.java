@@ -1,6 +1,5 @@
 package com.demoqa.shop.hooks;
 
-
 import com.demoqa.shop.pages.HomePage;
 import com.demoqa.shop.util.Browser;
 import com.demoqa.shop.util.Context;
@@ -8,7 +7,6 @@ import com.demoqa.shop.util.ScenarioContext;
 import com.demoqa.shop.util.ScreenshotUtil;
 import io.cucumber.java.*;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,8 +20,7 @@ public class Hooks {
         ScreenshotUtil.setScenario(scenario);
         WebDriver browser = Browser.getBrowser();
         HomePage homePage = new HomePage(browser);
-        PageFactory.initElements(browser, homePage);// TO BE DELETED BY A.DIOGOTI AFTER ADDING IT TO BASEPAGE
-        homePage.lnk_Dismiss.click(); //WOULD BE BETTER TO CHANGE WITH A PUBLIC METHOD IN HOMEPAGE
+        homePage.clickDismiss();
         ScenarioContext.getInstance().setContext(Context.CURRENT_PAGE, homePage);
         log.info("'Before' block has been executed");
     }
@@ -35,3 +32,4 @@ public class Hooks {
     }
 
 }
+
