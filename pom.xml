@@ -111,7 +111,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>School_Of_Automation_iteration2</projectName>
+                            <projectName>FinalTask</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
 
                             <!-- optional, defaults to outputDirectory if not specified -->
