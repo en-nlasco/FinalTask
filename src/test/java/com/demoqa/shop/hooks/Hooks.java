@@ -1,10 +1,10 @@
 package com.demoqa.shop.hooks;
 
 import com.demoqa.shop.pages.HomePage;
+import com.demoqa.shop.util.ScreenshotUtil;
 import com.demoqa.shop.util.Browser;
 import com.demoqa.shop.util.Context;
 import com.demoqa.shop.util.ScenarioContext;
-import com.demoqa.shop.util.ScreenshotUtil;
 import io.cucumber.java.*;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 
 
 public class Hooks {
-    Logger log = LoggerFactory.getLogger(Hooks.class);
+    Logger log = LoggerFactory.getLogger ( Hooks.class );
 
     @Before
     public void before(Scenario scenario) {
@@ -26,10 +26,11 @@ public class Hooks {
     }
 
     @After
-    public void after() {
-        Browser.closeBrowser();
-        ScenarioContext.getInstance().clearScenarioContext();
+    public void after ( Scenario scenario ) {
+        if (scenario.isFailed ( ))
+            ScreenshotUtil.takeScreenshot ( "onFail" );
+        Browser.closeBrowser ( );
+        ScenarioContext.getInstance ( ).clearScenarioContext ( );
     }
 
 }
-

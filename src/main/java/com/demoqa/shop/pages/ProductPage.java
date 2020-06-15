@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-public class ProductPage extends BasePage {
+import java.util.List;
+
+public class ProductPage extends AbstractCommonPage {
 
     @FindBy(xpath = "//select[@id='pa_size']")
     private WebElement sizeDropdown;
@@ -19,34 +21,63 @@ public class ProductPage extends BasePage {
     @FindBy(xpath = "//li[@id='nav-menu-item-cart']//a//span//i")
     private WebElement viewCart;
 
-    public ProductPage(WebDriver driver) {
-        super(driver);
+    @FindBy(css = ".add_to_wishlist.single_add_to_wishlist")
+    private List < WebElement > wishlistIconOnProductPage;
+
+    @FindBy(xpath = "//a[contains(text(),\"My Wishlist\")]")
+    private WebElement myWishListLink;
+
+    @FindBy(css = ".yith-wcwl-wishlistaddedbrowse")
+    private WebElement iconIsChecked;
+
+    public ProductPage ( WebDriver driver ) {
+        super ( driver );
     }
 
     @Override
-    public String getUrl() {
+    public String getUrl () {
         return "http://shop.demoqa.com/product/";
     }
 
     @Override
-    public String getTitle() {
+    public String getTitle () {
         return "Product Page";
     }
 
-    public void selectColor(String color) {
-        new Select(colorDropdown).selectByValue(color);
+    public void selectColor ( String color ) {
+        new Select ( colorDropdown ).selectByValue ( color );
     }
 
-    public void selectSize(String size) {
-        new Select(sizeDropdown).selectByValue(size);
+    public void selectSize ( String size ) {
+        new Select ( sizeDropdown ).selectByValue ( size );
     }
 
-    public void addToCart() {
-        addToCartButton.click();
+    public void addToCart () {
+        addToCartButton.click ( );
     }
 
-    public void clickViewCart() {
-        viewCart.click();
+    public void clickViewCart () {
+        viewCart.click ( );
+    }
+
+    public void clickOnWishlistIcon () {
+        wishlistIconOnProductPage.get ( 0 ).click ( );
+    }
+
+    public void goToMyWishListPage () {
+        myWishListLink.click ( );
+    }
+
+    public List < WebElement > getWishlistIconOnProductPage () {
+        return wishlistIconOnProductPage;
+    }
+
+    public WebElement getMyWishListLink () {
+        return myWishListLink;
+    }
+
+    public WebElement getIconIsChecked () {
+        return iconIsChecked;
     }
 
 }
