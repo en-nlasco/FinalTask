@@ -1,48 +1,57 @@
 package com.demoqa.shop.util;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 
 public class ScreenshotUtil {
-    static Logger log = LoggerFactory.getLogger( ScreenshotUtil.class );
+    public static String scenarioName;
+    static Logger log = LoggerFactory.getLogger ( ScreenshotUtil.class );
     private static Scenario scenario;
 
     public static void setScenario ( Scenario scenario ) {
         ScreenshotUtil.scenario = scenario;
-
+        scenarioName = scenario.getName ( ) + System.currentTimeMillis ( );
     }
 
-    public static void takeScreenshot ( String name ) throws WebDriverException {
+    public static void takeScreenshot ( String name ) {
+        TakesScreenshot ts = (TakesScreenshot) Browser.getBrowser ( );
+        LocalDateTime now = LocalDateTime.now ( );
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern ( "yyyy-MM-dd HH_mm_ss" );
+        String formatDateTime = now.format ( formatter );
+        byte[] source = ts.getScreenshotAs ( OutputType.BYTES );
+        scenario.embed ( source , "image/png" );
+        Path scenarioPath = Paths.get ( new File ( "target/screenshot/" + scenarioName + "/" ).getPath ( ) );
         try {
-            TakesScreenshot ts = (TakesScreenshot) Browser.getBrowser ( );
-            byte[] source = ts.getScreenshotAs ( OutputType.BYTES );
-            scenario.embed ( source , "image/png" );
-            Path scenarioPath = Paths.get ( new File ( "target/screenshot/" + scenario.getName ( ) + "/" ).getPath ( ) );
             Files.createDirectories ( scenarioPath );
-            Files.write ( scenarioPath.resolve ( name + LocalDate.now ( ).toString ( ) + ".png" ) , source );
-        } catch (Exception e) {
-            System.out.println ( "Exception while taking screenshots" + e.getMessage ( ) );
-
+            Files.write ( scenarioPath.resolve ( name + formatDateTime + ".png" ) , source );
+        } catch (IOException e) {
+            log.error ( "Fail to save screenshot" + e.getMessage ( ) );
         }
     }
 
-    public static void scrollToElement ( WebDriver driver , WebElement myItem ) throws WebDriverException {
-
+    public static void scrollToElement ( WebDriver driver , WebElement myItem ) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript ( "arguments[0].scrollIntoView();" , myItem );
-
     }
 
     public static void highLight ( WebElement myItem ) {
         JavascriptExecutor js = (JavascriptExecutor) Browser.getBrowser ( );
         js.executeScript ( "arguments[0].setAttribute('style', 'border: 3px solid orange;');" , myItem );
+    }
+
+    public static void scrollToTop ( WebDriver driver ) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript ( "window.scrollTo(0,0)" );
     }
 }

@@ -20,38 +20,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class NLuchianStepsDefinition {
     Logger log = LoggerFactory.getLogger(NLuchianStepsDefinition.class);
 
-    @Given("{string} page is displayed")
-    public void validatePage(String string) {
-        String currentURL = Browser.getBrowser().getCurrentUrl();
-        BasePage page;
-        switch (string.toLowerCase()) {
-            case "home": {
-                page = new HomePage(Browser.getBrowser());
-                break;
-            }
-            case "cart": {
-                page = new Cart(Browser.getBrowser());
-                break;
-            }
-            case "product": {
-                page = new ProductPage(Browser.getBrowser());
-                break;
-            }
-//            case "checkout": {
-//                page = new CheckoutPage(Browser.getBrowser());
-//                break;
-//            }
-//            case "order received": {
-//                page = new OrderReceivedPage(Browser.getBrowser());
-//                break;
-//            }                                                TO BE UNCOMMENTED BY N. LASCO
-            default:
-                throw new IllegalStateException("Unexpected value for page name: " + string.toLowerCase());
-        }
-        assertTrue(currentURL.contains(page.getUrl()), "wrong page is displayed");
-        ScenarioContext.getInstance().setContext(Context.CURRENT_PAGE, page);
-    }
-
     @When("User select {string} item from main page")
     public void userSelectAnItemFromMainPage(String string) {
         HomePage homePage = (HomePage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
