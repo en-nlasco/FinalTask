@@ -50,12 +50,10 @@ public class Browser {
         if (instance != null) {
             instance.close();
             instance.quit();
+            instance = null;
             log.info("'Browser' has been closed");
         } else {
             log.info("There is no 'Browser' to be closed");
         }
     }
 }
-
-
-
