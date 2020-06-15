@@ -15,6 +15,17 @@ public class HomePage extends BasePage {
     private WebElement lnk_MyWishlist;
     @FindBy(how = How.XPATH, using = "//a[contains(text(),'Checkout')]")
     private WebElement lnk_Checkout;
+    @FindBy(how = How.XPATH, using = "//span[contains(@class,'cart-name-and-total')]")
+    private WebElement lnk_Cart;
+    @FindBy(how = How.XPATH, using = "//a[contains(@class,'noo-search')]")
+    private WebElement lnk_Search;
+
+
+    @FindBy(css = "div.first.product_cat-t-shirt")
+    private WebElement firstItem;
+
+    @FindBy(css = "div.last.product_cat-t-shirt")
+    private WebElement lastItem;
 
     public WebElement getLnk_Dismiss() {
         return lnk_Dismiss;
@@ -40,10 +51,6 @@ public class HomePage extends BasePage {
         return lnk_Search;
     }
 
-    @FindBy(how = How.XPATH, using = "//span[contains(@class,'cart-name-and-total')]")
-    private WebElement lnk_Cart;
-    @FindBy(how = How.XPATH, using = "//a[contains(@class,'noo-search')]")
-    private WebElement lnk_Search;
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -52,6 +59,12 @@ public class HomePage extends BasePage {
     public void clickDismiss() {
         getLnk_Dismiss().click();
     }
+
+    public void clickFirstItem() {
+        firstItem.click();
+    }
+
+    public void clickSecondItem() { lastItem.click(); }
 
     @Override
     public String getUrl() {
@@ -62,6 +75,4 @@ public class HomePage extends BasePage {
     public String getTitle() {
         return "ToolsQA Demo Site – ToolsQA – Demo E-Commerce Site";
     }
-
-
 }
