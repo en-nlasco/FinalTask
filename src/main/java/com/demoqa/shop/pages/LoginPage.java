@@ -15,6 +15,8 @@ public class LoginPage extends BasePage {
     private WebElement button_register_login_page;
     @FindBy(how = How.XPATH, using = "//p[contains(text(),'Your session has expired because it has been over')]")
     private WebElement message_login_page;
+    @FindBy(how = How.XPATH, using = "//p[@id='backtoblog']//a[contains(text(),'Back to ToolsQA Demo Site')]")
+    private WebElement button_back_to_account;
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -36,6 +38,11 @@ public class LoginPage extends BasePage {
         return button_register_login_page;
     }
 
+    public WebElement getButton_back_to_account() {
+        return button_back_to_account;
+    }
+
+
     @Override
     public String getUrl() {
         return "http://shop.demoqa.com/shop-demoqa?redirect_to=http%3A%2F%2Fshop.demoqa.com%2Fmy-account%2F&aiowps_login_msg_id=session_expired";
@@ -45,4 +52,5 @@ public class LoginPage extends BasePage {
     public String getTitle() {
         return "Log In ‹ ToolsQA Demo Site — WordPress";
     }
+
 }
