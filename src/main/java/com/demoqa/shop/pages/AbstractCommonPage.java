@@ -22,7 +22,7 @@ public abstract class AbstractCommonPage extends BasePage {
     }
 
     public void goToMyWishListPage () {
-        ScreenshotUtil.scrollToTop ( Browser.getBrowser ( ) );
+        ScreenshotUtil.scrollToTop ();
         myWishListPage.click ( );
     }
 
