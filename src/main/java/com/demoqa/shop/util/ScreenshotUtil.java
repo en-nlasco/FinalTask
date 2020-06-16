@@ -40,7 +40,7 @@ public class ScreenshotUtil {
         }
     }
 
-    public static void scrollToElement ( WebElement myItem ) {
+    public static void scrollToElement (WebElement myItem ) {
         JavascriptExecutor js = (JavascriptExecutor) Browser.getBrowser();
         js.executeScript ( "arguments[0].scrollIntoView();" , myItem );
     }

@@ -31,7 +31,7 @@ public class CommonSteps {
                 break;
             }
             case "cart": {
-                page = new Cart(Browser.getBrowser());
+                page = new CartPage(Browser.getBrowser());
                 break;
             }
             case "product": {

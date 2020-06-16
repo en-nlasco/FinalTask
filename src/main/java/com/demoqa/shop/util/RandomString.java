@@ -1,5 +1,4 @@
 package com.demoqa.shop.util;
-import java.util.Random;
 
 public class RandomString {
 

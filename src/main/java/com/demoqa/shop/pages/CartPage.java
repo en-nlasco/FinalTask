@@ -1,11 +1,14 @@
 package com.demoqa.shop.pages;
 
+import com.demoqa.shop.util.Browser;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class Cart extends BasePage {
+import java.util.List;
+
+public class CartPage extends BasePage {
 
     @FindBy(css = "a.empty-cart")
     private WebElement clearCartButton;
@@ -22,7 +25,16 @@ public class Cart extends BasePage {
     @FindBy(css = "a[class$='forward']")
     private WebElement proceedCheckoutButton;
 
-    public Cart(WebDriver driver) {
+    @FindBy (xpath = "//tr[@class='cart_item']")
+    private List<WebElement> cartItems;
+//
+    @FindBy(css = ".cart-empty")
+    private WebElement emptyCartMsg;
+
+    @FindBy(css = "input[id^=\"noo-quantity\"]")
+    private WebElement increaseQTYInput;
+
+    public CartPage(WebDriver driver) {
         super(driver);
     }
 
@@ -52,7 +64,28 @@ public class Cart extends BasePage {
         logoButton.click();
     }
 
+    public int countCartItems (){
+        return cartItems.size();
+    };
+
     public void clickProceedCheckout() {
         proceedCheckoutButton.click();
+    }
+
+    public WebElement getEmptyCartMsg(){
+        return emptyCartMsg;
+    }
+
+    public WebElement getCartItems() {
+        return Browser.getBrowser().findElement(By.xpath("//article[@id='post-6']//div//div//form//table"));
+    }
+
+    public int readQtyOFItem (){
+        String qtyInputField = increaseQTYInput.getAttribute("value");
+        return Integer.parseInt(qtyInputField);
+    }
+
+    public WebElement getIncreaseQTYInput() {
+        return increaseQTYInput;
     }
 }
