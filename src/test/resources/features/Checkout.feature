@@ -67,9 +67,9 @@ Feature: Checkout page
     Examples:
       | Field          | Message                                     |
       | First name     | Billing First name is a required field.     |
- #     | Last name      | Billing Last name is a required field.      |
-     # | Street Address | Billing Street address is a required field. |
-    #  | City           | Billing Town / City is a required field.    |
-    #  | Postcode       | Billing Postcode / ZIP is a required field. |
-    #  | Phone          | Billing Phone is a required field.          |
-     # | Email          | Billing Email address is a required field.  |
+      | Last name      | Billing Last name is a required field.      |
+      | Street Address | Billing Street address is a required field. |
+      | City           | Billing Town / City is a required field.    |
+      | Postcode       | Billing Postcode / ZIP is a required field. |
+      | Phone          | Billing Phone is a required field.          |
+      | Email          | Billing Email address is a required field.  |
