@@ -24,8 +24,25 @@ public class AccountPage extends BasePage {
     private WebElement field_username_login;
     @FindBy(how = How.XPATH, using = "//input[@id='password']")
     private WebElement field_password_login;
+    @FindBy(how = How.XPATH, using = "//div[@id='primary']//*//p[contains(text(),'Hello ')]")
+    private WebElement message_username;
+    @FindBy(how = How.XPATH, using = "//button[contains(text(),'Log in')]")
+    private WebElement button_login_account_page;
+    @FindBy(how = How.XPATH, using = "//a[contains(text(),'Account details')]")
+    private WebElement navigation_link_account_details;
+    @FindBy(how = How.XPATH, using = "//div[contains(@class,'woocommerce-message')]")
+    private WebElement message_account_updated;
+
+    public WebElement getMessage_account_updated() {
+        return message_account_updated;
+    }
+
+    public WebElement getNavigation_link_account_details() {
+        return navigation_link_account_details;
+    }
 
     public WebElement getField_username() {
+
         return field_username;
     }
 
@@ -57,8 +74,7 @@ public class AccountPage extends BasePage {
         return button_login_account_page;
     }
 
-    @FindBy(how = How.XPATH, using = "//button[contains(text(),'Log in')]")
-    private WebElement button_login_account_page;
+    public WebElement getMessage_username() { return message_username; }
 
     public AccountPage(WebDriver driver) {
         super(driver);

@@ -11,13 +11,12 @@ Feature: Modify account
 
     Given customer enters his new username, email and password in registry form
     And submits his request in registry form
-    Then Demoqa shop  login page is opened
+    Given Demoqa shop  login page is opened
     When he clicks back to home
-    And clicks account link menu
+    And he clicks account link menu
     When he enters his username and password in login form
     And submits Login request
     Then account name is set as entered username
-
 
   Scenario: 02: New user creates account and modifies account name
 
@@ -25,7 +24,7 @@ Feature: Modify account
     And submits his request in registry form
     Then Demoqa shop  login page is opened
     When he clicks back to home
-    And clicks account link menu
+    And he clicks account link menu
     When he enters his username and password in login form
     And submits Login request
     When he click Account settings
@@ -33,14 +32,11 @@ Feature: Modify account
     And He enters his Second Name
     And He enters his new account name
     And submits save request
-    Then account name is set as his new Name
+    Then account name is set as entered username
 
   Scenario: 03: Existed user modifies email on account details
 
-    Given Customer enters his credentials in login form
-      | Field    | value       |
-      | username | tester      |
-      | password | FDSA@cde123 |
+    Given Customer enters his username 'atftester' and password 'CSQ@csq123$' in login form
     And submits Login request
     When he click Account settings
     And He enters his new email
@@ -49,11 +45,11 @@ Feature: Modify account
 
   Scenario: 04: Existed user modifies password with wrong value on account details
 
-    Given Customer enters his credentials in login form
-      | Field    | value       |
-      | username | tester      |
-      | password | FDSA@cde123 |
+    Given Customer enters his username 'atftester' and password 'CSQ@csq123$' in login form
     And submits Login request
     When he click Account settings
     And He enters not valid current password
+    And He enters new password
+    And He reenters new password
+    And submits save request with wrong data
     Then message not valid current password is displayed
