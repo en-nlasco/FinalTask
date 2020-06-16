@@ -1,4 +1,4 @@
-@Run
+#@Run
 Feature: Manage 'Wish List' functionality on shop.demoqa.com
 
   Background:

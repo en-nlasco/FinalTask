@@ -24,29 +24,30 @@ public class UpdateAccountStepdefs {
     public void demoqaShopHomepageIsOpened() {
         HomePage homePage = (HomePage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         ATFAssert.assertEquals(homePage.getTitle(), driver.getTitle(), "New page is opened", "Page" + homePage.getUrl() + " is opened");
-
-        // assertEquals(homePage.getTitle(), driver.getTitle());
         log.info("Home page with url {}  is loaded",
                 driver.getCurrentUrl());
+        ScreenshotUtil.takeScreenshot ( "Demoqa shop homepage is opened" );
     }
 
-    @And("he clicks account link menu")
+    @And("user clicks account link menu")
     public void heClicksAccountLinkMenu() {
         HomePage homePage = (HomePage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         homePage.getLnk_MyAccount().click();
+        ScreenshotUtil.takeScreenshot ( "user clicks account link menu" );
         log.info("{} was clicked.",
                 homePage.getLnk_MyAccount().getText());
         ScenarioContext.getInstance().setContext(Context.CURRENT_PAGE, new AccountPage(driver));
+        ScreenshotUtil.takeScreenshot ( "user clicks account link menu" );
+
     }
 
     @And("my-account page is opened")
     public void myAccountPageIsOpened() {
         AccountPage accountPage = (AccountPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         ATFAssert.assertEquals(accountPage.getTitle(), driver.getTitle(), "New page is opened", "Page" + accountPage.getUrl() + " is opened");
-
-        //   assertEquals(accountPage.getTitle(), driver.getTitle());
         log.info("Page {} is opened.",
                 accountPage.getUrl());
+        ScreenshotUtil.takeScreenshot ( "my-account page is opened" );
     }
 
     @Given("customer enters his new username, email and password in registry form")
@@ -67,6 +68,7 @@ public class UpdateAccountStepdefs {
                 email);
         log.info(" Into field account password value ' {} ' is entered.",
                 password);
+        ScreenshotUtil.takeScreenshot ( "customer enters his new username, email and password in registry form" );
     }
 
     @And("submits his request in registry form")
@@ -76,7 +78,7 @@ public class UpdateAccountStepdefs {
         accountPage.getButton_register().sendKeys(Keys.ENTER);
         log.info("Button register is clicked.");
         ScenarioContext.getInstance().setContext(Context.CURRENT_PAGE, new LoginPage(driver));
-
+        ScreenshotUtil.takeScreenshot ( "submits his request in registry form" );
 
     }
 
@@ -86,19 +88,21 @@ public class UpdateAccountStepdefs {
         ATFAssert.assertEquals(loginPage.getUrl(), driver.getCurrentUrl(), "New page is opened", "Page" + loginPage.getUrl() + " is opened");
         log.info("Page {} is opened.",
                 loginPage.getUrl());
+        ScreenshotUtil.takeScreenshot ( "Demoqa shop  login page is opened" );
     }
 
-    @When("he clicks back to home")
-    public void heClicksBackToHome() {
+    @When("user clicks back to home")
+    public void heClicksBackToHome() throws InterruptedException {
         LoginPage loginPage = (LoginPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
-        loginPage.getButton_back_to_account().isSelected();
+        Thread.sleep(1000);
         loginPage.getButton_back_to_account().sendKeys(Keys.ENTER);
-        loginPage.getButton_back_to_account().click();
+        Thread.sleep(1000);
         log.info("Button back_to_account_page is clicked.");
         ScenarioContext.getInstance().setContext(Context.CURRENT_PAGE, new HomePage(driver));
+
     }
 
-    @When("he enters his username and password in login form")
+    @When("user enters his username and password in login form")
     public void heEntersHisUsernameAndPasswordInLoginForm() {
         AccountPage accountPage = (AccountPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         String name = ScenarioContext.getInstance().getContext(Context.NEW_LOGINNAME).toString();
@@ -109,13 +113,16 @@ public class UpdateAccountStepdefs {
                 name);
         log.info(" Into field account email value ' {} ' is entered.",
                 password);
+        ScreenshotUtil.takeScreenshot ( "user enters his username and password in login form" );
+
     }
 
-    @And("submits Login request")
+    @And("user submits Login request")
     public void submitsLoginRequest() {
         AccountPage accountPage = (AccountPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         accountPage.getButton_login_account_page().click();
         log.info("Login Done with button login account  clicks.");
+        ScreenshotUtil.takeScreenshot ( "user submits Login request" );
     }
 
     @Then("account name is set as entered username")
@@ -125,18 +132,21 @@ public class UpdateAccountStepdefs {
         ATFAssert.assertEquals(accountPage.getMessage_username().getText(), "Hello " + name + " (not " + name + "? Log out)", "user is  logged in ", "user with acount " + name + "  is logedin");
         log.info("Page with url {}  is loaded",
                 driver.getCurrentUrl());
-        log.info("user with acount name{}  is logedin",
+        log.info("user with account name{}  is logedin",
                 name);
+        ScreenshotUtil.takeScreenshot ( "account name is set as entered username" );
+
     }
 
-    @When("he click Account settings")
+    @When("user click Account settings")
     public void heClickAccountSettings() {
         AccountPage accountPage = (AccountPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         accountPage.getNavigation_link_account_details().click();
         ScenarioContext.getInstance().setContext(Context.CURRENT_PAGE, new AccountEditPage(driver));
+        ScreenshotUtil.takeScreenshot ( "user click Account settings" );
     }
 
-    @And("He enters his First Name")
+    @And("user enters his First Name")
     public void heEntersHisFirstName() {
         AccountEditPage accountEditPage = (AccountEditPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         String firstName = "Mike";
@@ -145,7 +155,7 @@ public class UpdateAccountStepdefs {
                 firstName);
     }
 
-    @And("He enters his Second Name")
+    @And("user enters his Second Name")
     public void heEntersHisSecondName() {
         AccountEditPage accountEditPage = (AccountEditPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         String lastName = "Mike";
@@ -154,7 +164,7 @@ public class UpdateAccountStepdefs {
                 lastName);
     }
 
-    @And("He enters his new account name")
+    @And("user enters his new account name")
     public void heEntersHisNewAccountName() {
         AccountEditPage accountEditPage = (AccountEditPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         ScenarioContext.getInstance().setContext(Context.NEW_LOGINNAME, RandomString.getAlphaNumericString(8));
@@ -163,6 +173,7 @@ public class UpdateAccountStepdefs {
         accountEditPage.getField_display_name().sendKeys(newName);
         log.info(" Into field First name value ' {} ' is entered.",
                 newName);
+        ScreenshotUtil.takeScreenshot ( "user enters his new account name" );
     }
 
     @And("submits save request")
@@ -171,10 +182,9 @@ public class UpdateAccountStepdefs {
         accountEditPage.getButton_save_account().click();
         log.info(" Save request is submitted on registry form. ");
         ScenarioContext.getInstance().setContext(Context.CURRENT_PAGE, new AccountPage(driver));
-
     }
 
-    @And("He enters his new email")
+    @And("user enters his new email")
     public void heEntersHisNewEmail() {
         AccountEditPage accountEditPage = (AccountEditPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         ScenarioContext.getInstance().setContext(Context.NEW_EMAIL, RandomString.getAlphaNumericString(5) + "@mail.ru");
@@ -183,6 +193,7 @@ public class UpdateAccountStepdefs {
         accountEditPage.getField_account_email().sendKeys(newEmail);
         log.info(" Into field email value ' {} ' is entered.",
                 newEmail);
+        ScreenshotUtil.takeScreenshot ( "user enters his new email" );
     }
 
     @Then("message email was changed is displayed")
@@ -192,6 +203,7 @@ public class UpdateAccountStepdefs {
                 accountPage.getMessage_account_updated().getText());
         log.info(" Message for email changing ' {} ' is displayed.",
                 accountPage.getMessage_account_updated().getText());
+        ScreenshotUtil.takeScreenshot ( "message email was changed is displayed" );
     }
 
 
@@ -215,9 +227,10 @@ public class UpdateAccountStepdefs {
                 driver.getCurrentUrl());
         log.info("user with acount name{}  is logedin",
                 name);
+        ScreenshotUtil.takeScreenshot ( "account name is set as entered new username" );
     }
 
-    @And("He enters not valid current password")
+    @And("user enters not valid current password")
     public void heEntersNotValidCurrentPassword() {
         AccountEditPage accountEditPage = (AccountEditPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         String wrongPassword = " sdfdfgs@SFDSF324$";
@@ -226,7 +239,7 @@ public class UpdateAccountStepdefs {
                 wrongPassword);
     }
 
-    @And("He enters new password")
+    @And("user enters new password")
     public void heEntersNewPassword() {
         AccountEditPage accountEditPage = (AccountEditPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         ScenarioContext.getInstance().setContext(Context.NEW_PASSWORD, RandomString.getAlphaNumericString(12) + "@#$12");
@@ -236,16 +249,17 @@ public class UpdateAccountStepdefs {
                 passwordNew);
     }
 
-    @And("He reenters new password")
+    @And("user reenters new password")
     public void heReentersNewPassword() {
         AccountEditPage accountEditPage = (AccountEditPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         String passwordNew = ScenarioContext.getInstance().getContext(Context.NEW_PASSWORD).toString();
         accountEditPage.getField_password_new2().sendKeys(passwordNew);
         log.info(" Into field current password value ' {} ' is entered.",
                 passwordNew);
+        ScreenshotUtil.takeScreenshot ( "user reenters new password" );
     }
 
-    @And("submits save request with wrong data")
+    @And("user submits save request with wrong data")
     public void submitsSaveRequestWithWrongData() {
         AccountEditPage accountEditPage = (AccountEditPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         accountEditPage.getButton_save_account().click();
@@ -260,6 +274,6 @@ public class UpdateAccountStepdefs {
                 accountEditPage.getMessage_current_passwords_is_incorrect().getText());
         log.info(" Message {} is displayed.",
                 accountEditPage.getMessage_current_passwords_is_incorrect().getText());
+        ScreenshotUtil.takeScreenshot ( "message not valid current password is displayed" );
     }
-
 }
