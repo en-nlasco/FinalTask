@@ -40,8 +40,8 @@ public class ScreenshotUtil {
         }
     }
 
-    public static void scrollToElement ( WebDriver driver , WebElement myItem ) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+    public static void scrollToElement (WebElement myItem ) {
+        JavascriptExecutor js = (JavascriptExecutor) Browser.getBrowser();
         js.executeScript ( "arguments[0].scrollIntoView();" , myItem );
     }
 
@@ -50,8 +50,8 @@ public class ScreenshotUtil {
         js.executeScript ( "arguments[0].setAttribute('style', 'border: 3px solid orange;');" , myItem );
     }
 
-    public static void scrollToTop ( WebDriver driver ) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+    public static void scrollToTop () {
+        JavascriptExecutor js = (JavascriptExecutor) Browser.getBrowser();
         js.executeScript ( "window.scrollTo(0,0)" );
     }
 }

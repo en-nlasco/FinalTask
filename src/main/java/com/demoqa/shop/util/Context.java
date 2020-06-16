@@ -5,4 +5,5 @@ public enum Context {
     NEW_LOGINNAME,
     NEW_EMAIL,
     NEW_PASSWORD
+    QUANTITY
 }

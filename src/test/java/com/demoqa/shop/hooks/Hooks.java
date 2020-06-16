@@ -32,5 +32,4 @@ public class Hooks {
         Browser.closeBrowser ( );
         ScenarioContext.getInstance ( ).clearScenarioContext ( );
     }
-
 }
