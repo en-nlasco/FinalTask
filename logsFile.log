@@ -806,3 +806,385 @@
 21:02:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
 21:02:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
 21:02:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+12:44:36 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+12:44:36 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+12:44:42 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (8a08838ba92fcd28b44fa26c78606a8b) browser session has been started
+12:44:48 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+12:44:55 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+12:44:55 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+12:44:55 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+12:44:55 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+12:44:57 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+12:44:57 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+12:54:55 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+12:54:55 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+12:55:08 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (c59e4329a13fcb3c01af2cc7ae7599c8) browser session has been started
+12:55:15 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+12:55:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+12:55:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+12:55:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+12:55:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+12:55:23 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+12:55:23 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+12:59:32 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+12:59:32 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+12:59:37 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (a6fee09fd7e713be3a5c8d5d348515c2) browser session has been started
+12:59:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+12:59:49 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+12:59:49 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+12:59:49 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+12:59:49 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+12:59:51 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+12:59:51 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:08:49 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+13:08:49 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+13:08:54 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (1b77a10c2bf22613c9fbbe931587493e) browser session has been started
+13:09:01 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:09:07 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:09:07 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:09:07 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:09:07 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+13:09:09 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:09:09 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:12:12 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+13:12:12 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+13:12:16 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (f065217b2d9e5d42df45c7231fefdcae) browser session has been started
+13:12:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:12:28 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:12:28 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:12:28 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:12:28 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+13:12:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color black available for this item is true
+13:12:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:12:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:18:20 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+13:18:20 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+13:18:25 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (8c53085fba5b528d4277d4f18d3a7641) browser session has been started
+13:18:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:18:37 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:18:37 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:18:37 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:18:37 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+13:18:42 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color black available for this item is true
+13:18:55 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:18:55 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:20:46 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+13:20:46 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+13:20:50 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (1d76b5985455a7071b388e4c0c1f592e) browser session has been started
+13:20:57 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:21:03 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:21:03 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:21:03 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:21:03 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+13:21:08 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:21:08 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:21:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+13:21:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+13:21:47 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (29dbb43c76b2aabf4df1ae705dc20ed9) browser session has been started
+13:21:53 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:22:00 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:22:00 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:22:00 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:22:00 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+13:22:03 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color black available for this item is true
+13:22:08 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size 32 available for this item is true
+13:22:15 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+13:22:15 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size large available for this item is true
+13:22:16 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:22:16 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:23:45 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+13:23:45 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+13:23:49 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (16f144fb46092c8ce3cf6269c1304187) browser session has been started
+13:23:59 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:24:06 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:24:06 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:24:06 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:24:06 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+13:24:10 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color black available for this item is true
+13:24:14 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size 32 available for this item is true
+13:24:21 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+13:24:21 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size large available for this item is true
+13:24:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:24:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:24:44 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+13:24:44 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+13:24:48 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (d0ee2fe9201ce48f7aa381dc52ca002b) browser session has been started
+13:24:54 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:25:00 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:25:00 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:25:01 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:25:01 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+13:25:05 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:25:05 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:25:05 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Displaying the results in Grid view and List view' has been started
+13:25:09 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (b61f3c764a83c08ffe9da4bac6e54649) browser session has been started
+13:25:15 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:25:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:25:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:25:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:25:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Grid view selected is true
+13:25:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that List view is selected is true
+13:25:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item category is displayed is true
+13:25:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item price is displayed is true
+13:25:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item description is displayed is true
+13:25:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item action options displayed is true
+13:25:26 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Grid view selected is true
+13:25:27 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:25:27 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:25:27 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Sorting the results by different criteria' has been started
+13:25:30 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (75e3bf9919c6e743e0b98a0922e8cad8) browser session has been started
+13:25:36 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:25:42 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:25:42 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:25:42 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:25:42 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:25:50 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+13:25:50 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Medium size available for this item is true
+13:25:51 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Results displayed in right order
+13:25:52 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:25:52 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:26:12 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+13:26:12 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+13:26:16 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (7d5d05841ba43691c98d9e49fecc724d) browser session has been started
+13:26:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:26:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:26:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:26:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:26:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+13:26:35 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color black available for this item is true
+13:26:40 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size 32 available for this item is true
+13:26:47 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+13:26:47 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size large available for this item is true
+13:26:48 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:26:48 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:26:48 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Displaying the results in Grid view and List view' has been started
+13:26:51 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (9dbc9e220ab79d42b4fd47719caa5f75) browser session has been started
+13:26:57 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:27:03 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:27:03 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:27:03 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:27:03 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Grid view selected is true
+13:27:05 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that List view is selected is true
+13:27:06 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item category is displayed is true
+13:27:06 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item price is displayed is true
+13:27:06 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item description is displayed is true
+13:27:06 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item action options displayed is true
+13:27:07 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Grid view selected is true
+13:27:08 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:27:08 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:27:08 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Sorting the results by different criteria' has been started
+13:27:11 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (4725b060d0e34a4af9ddbcd62b571249) browser session has been started
+13:27:18 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:27:25 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:27:25 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:27:25 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:27:25 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:27:34 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+13:27:34 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Medium size available for this item is true
+13:27:34 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Results displayed in right order
+13:27:35 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:27:35 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:54:49 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+13:54:49 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+13:54:54 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (1257411fadb547881a6e17f83b3075c0) browser session has been started
+13:55:01 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:55:07 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:55:07 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:55:07 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:55:07 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+13:55:10 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color black available for this item is true
+13:55:15 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size 32 available for this item is true
+13:55:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+13:55:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size large available for this item is true
+13:55:23 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:55:23 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:55:23 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Displaying the results in Grid view and List view' has been started
+13:55:26 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (57d328f4a768af5e0246ef656ef7fddf) browser session has been started
+13:55:33 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:55:38 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:55:38 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:55:38 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:55:38 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Grid view selected is true
+13:55:41 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that List view is selected is true
+13:55:41 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item category is displayed is true
+13:55:41 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item price is displayed is true
+13:55:41 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item description is displayed is true
+13:55:41 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item action options displayed is true
+13:55:42 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Grid view selected is true
+13:55:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:55:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+13:55:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Sorting the results by different criteria' has been started
+13:55:47 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (f07296aa4904b8a760c85720fb191fcc) browser session has been started
+13:55:52 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+13:55:59 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+13:55:59 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+13:55:59 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:55:59 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+13:56:07 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+13:56:07 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Medium size available for this item is true
+13:56:08 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Results displayed in right order
+13:56:09 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+13:56:09 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+16:58:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+16:58:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+16:58:48 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (673c7963f3e3455462f5442fa5d0797a) browser session has been started
+16:58:54 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+16:59:01 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+16:59:01 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+16:59:01 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+16:59:01 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+16:59:05 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+16:59:05 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+16:59:05 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Displaying the results in Grid view and List view' has been started
+16:59:09 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (c6cd9e3a1c7edfbac69733fc5c7a7d46) browser session has been started
+16:59:14 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+16:59:20 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+16:59:20 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+16:59:20 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+16:59:20 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Grid view selected is true
+16:59:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that List view is selected is true
+16:59:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item category is displayed is true
+16:59:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item price is displayed is true
+16:59:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item description is displayed is true
+16:59:22 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item action options displayed is true
+16:59:23 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Grid view selected is true
+16:59:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+16:59:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+16:59:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Sorting the results by different criteria' has been started
+16:59:27 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (ef39c781e76851700a9e367ad5699fc7) browser session has been started
+16:59:32 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+16:59:38 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+16:59:38 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+16:59:38 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+16:59:38 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+16:59:45 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+16:59:45 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Medium size available for this item is true
+16:59:45 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Results displayed in right order
+16:59:46 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+16:59:46 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+17:00:47 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+17:00:47 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+17:01:05 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (e9e131b125e8534d029fb66273ae678f) browser session has been started
+17:01:11 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+17:01:17 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+17:01:17 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+17:01:17 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+17:01:17 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+17:01:20 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color black available for this item is true
+17:01:24 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size 32 available for this item is true
+17:01:30 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+17:01:30 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size large available for this item is true
+17:01:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+17:01:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+17:01:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Displaying the results in Grid view and List view' has been started
+17:01:33 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (27082de877349981abf08cdcd5c40bc3) browser session has been started
+17:01:40 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+17:05:54 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+17:05:54 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+17:06:02 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (20db99a1a381ede4110e8c2381eb79ff) browser session has been started
+17:06:08 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+17:06:14 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+17:06:14 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+17:06:14 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+17:06:14 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+17:06:17 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color black available for this item is true
+17:06:21 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size 32 available for this item is true
+17:06:26 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+17:06:26 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size large available for this item is true
+17:06:27 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+17:06:27 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+17:06:27 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Displaying the results in Grid view and List view' has been started
+17:06:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (7eba6b0d69798f92dd35dc13f4b3aad3) browser session has been started
+17:06:37 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+17:06:42 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+17:06:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+17:06:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+17:06:43 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Grid view selected is true
+17:06:44 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that List view is selected is true
+17:06:44 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item category is displayed is true
+17:06:44 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item price is displayed is true
+17:06:44 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item description is displayed is true
+17:06:44 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item action options displayed is true
+17:06:46 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Grid view selected is true
+17:06:47 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+17:06:47 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+17:06:47 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Sorting the results by different criteria' has been started
+17:06:53 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (90f6b2bac811f2a923ae5389550d4fba) browser session has been started
+17:06:59 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+17:07:05 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+17:07:05 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+17:07:05 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+17:07:05 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+17:07:13 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+17:07:13 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Medium size available for this item is true
+17:07:14 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Results displayed in right order
+17:07:15 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+17:07:15 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+17:30:41 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Filter by color and size' has been started
+17:30:41 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+17:30:45 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (d15fe878f951f1d81d0e789c2c36d4a5) browser session has been started
+17:30:51 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+17:30:57 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - User is on Products page
+17:30:57 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+17:30:57 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+17:30:57 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+17:30:57 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that All elements displayed is true
+17:30:57 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - All items are displayed
+17:30:58 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - Color black is selected
+17:31:00 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color black available for this item is true
+17:31:02 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - Size 32 is selected
+17:31:04 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size 32 available for this item is true
+17:31:09 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - Color white and size large are selected
+17:31:11 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+17:31:11 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Size large available for this item is true
+17:31:12 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+17:31:12 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+17:31:12 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Displaying the results in Grid view and List view' has been started
+17:31:15 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (a72e084f2910d453d83f2f7cae10d8e3) browser session has been started
+17:31:21 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+17:31:26 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - User is on Products page
+17:31:26 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+17:31:26 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+17:31:26 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+17:31:26 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Grid view selected is true
+17:31:28 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - List view is selected
+17:31:28 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that List view is selected is true
+17:31:28 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item category is displayed is true
+17:31:28 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item price is displayed is true
+17:31:28 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item description is displayed is true
+17:31:28 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Item action options displayed is true
+17:31:30 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - Grid view is selected
+17:31:30 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Grid view selected is true
+17:31:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+17:31:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+17:31:31 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Sorting the results by different criteria' has been started
+17:31:34 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (bd4d0d095e8f81497d6c6b151d140ed5) browser session has been started
+17:31:40 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+17:31:46 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - User is on Products page
+17:31:46 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+17:31:46 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+17:31:46 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+17:31:46 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+17:31:48 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - Items ordered by price: low to high
+17:31:52 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - Color white, size medium and sort by price: high to low selected
+17:31:54 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+17:31:54 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Medium size available for this item is true
+17:31:55 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Results displayed in right order
+17:31:56 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+17:31:56 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared
+17:33:02 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - Execution of scenario 'Sorting the results by different criteria' has been started
+17:33:02 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.PropertyReader[0;39m - Properties were read from atf.properties file
+17:33:06 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - New ChromeDriver: chrome on WINDOWS (d650674407e1b67783ce78a95b426add) browser session has been started
+17:33:13 [main] [34mINFO [0;39m [36mcom.demoqa.shop.hooks.Hooks[0;39m - 'Before' block has been executed
+17:33:19 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - User is on Products page
+17:33:19 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter color on default is true
+17:33:19 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Filter size on default is true
+17:33:19 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+17:33:19 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Default sorting selected is true
+17:33:21 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - Items ordered by price: low to high
+17:33:25 [main] [34mINFO [0;39m [36mc.demoqa.shop.steps.ProdPageStepDef[0;39m - Color white, size medium and sort by price: high to low selected
+17:33:27 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Color white available for this item is true
+17:33:27 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Medium size available for this item is true
+17:33:28 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ATFAssert[0;39m - assert that Results displayed in right order
+17:33:29 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.Browser[0;39m - 'Browser' has been closed
+17:33:29 [main] [34mINFO [0;39m [36mcom.demoqa.shop.util.ScenarioContext[0;39m - Scenario Context was cleared

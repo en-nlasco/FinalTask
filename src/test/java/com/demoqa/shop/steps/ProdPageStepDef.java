@@ -17,18 +17,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.allOf;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ProdPageStepDef {
-    private WebDriver driver = Browser.getBrowser();
-    WebDriverWait wait = new WebDriverWait(driver, 15);
+
+    static Logger log = LoggerFactory.getLogger(ProdPageStepDef.class);
+    WebDriverWait wait = new WebDriverWait(Browser.getBrowser(), 15);
 
     @Given("the user is on the {string} page")
     public void userOnProductPage(String value) {
@@ -38,6 +39,7 @@ public class ProdPageStepDef {
         ProductPage product = new ProductPage(Browser.getBrowser());
         product.clickProductsButton();
         assertTrue(Browser.getBrowser().getCurrentUrl().contains(page.getUrl()));
+        log.info("User is on Products page");
         ScenarioContext.getInstance().setContext(Context.CURRENT_PAGE, page);
     }
 
@@ -53,48 +55,47 @@ public class ProdPageStepDef {
     public void allItemsDisplayed() {
         ProductsPage myPage = (ProductsPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
         ATFAssert.assertTrue("Not all items displayed", myPage.getAllElements().isDisplayed(), "All elements displayed");
-
+        log.info("All items are displayed");
     }
 
-    @When("the user selects a {string} color")
-    public void userSelectsColor(String color) {
-        color = "59";
-
+    @When("user selects the following filter:")
+    public void userSelectsColor(Map<String, String> filterMap) {
         ProductsPage myPage = (ProductsPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
-        myPage = new ProductsPage(Browser.getBrowser());
-        myPage.selectColor(color);
+        if (filterMap.containsKey("color")) {
+            myPage.selectColor(filterMap.get("color"));
+            log.info("Color black is selected");
+        } else if (filterMap.containsKey("size")) {
+            myPage.selectSize(filterMap.get("size"));
+            log.info("Size 32 is selected");
+        }
     }
 
-    @Then("only the items with that color are displayed")
-    public void itemsWithSelectedColorDisplayed() {
+    @Then("only the items with that {string} are displayed")
+    public void itemsWithSelectedColorDisplayed(String filter) {
         ProductsPage page = (ProductsPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
-        page.getFisrstItem().click();
-        ATFAssert.assertTrue("No such color for that item", page.getItemColorBlack().isDisplayed(), "Color black available for this item");
-    }
 
-    @When("the user selects a {string} size")
-    public void userSelectsSize(String size) {
-        size = "108";
-        ProductsPage page = (ProductsPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
-        page = new ProductsPage(Browser.getBrowser());
-        driver.get(page.getUrl());
-        page.selectSize(size);
-    }
-
-    @Then("only the items with that size are displayed")
-    public void itemsWithSelectedSizeDisplayed() {
-        ProductsPage page = (ProductsPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
-        page.getFisrstItem().click();
-        ATFAssert.assertTrue("No such size for that item", page.getItemSize32().isDisplayed(), "Size 32 available for this item");
+        switch (filter) {
+            case "color":
+                page.getFisrstItem().click();
+                wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id = 'pa_color']//option[@value='black']")));
+                ATFAssert.assertTrue("No such color for that item", page.getItemColorBlack().isDisplayed(), "Color black available for this item");
+                break;
+            case "size":
+                page.getFisrstItem().click();
+                wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id = 'pa_size']//option[@value='32']")));
+                ATFAssert.assertTrue("No such size for that item", page.getItemSize32().isDisplayed(), "Size 32 available for this item");
+                break;
+        }
+        Browser.getBrowser().get(page.getUrl());
     }
 
     @When("the user selects a option for both filters")
     public void userSelectsOptionForBothFilters() {
         ProductsPage page = (ProductsPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
-        page = new ProductsPage(Browser.getBrowser());
-        driver.get(page.getUrl());
+        Browser.getBrowser().get(page.getUrl());
         page.selectColor("60");
         page.selectSize("66");
+        log.info("Color white and size large are selected");
     }
 
     @Then("only the items matching both parameters are displayed")
@@ -116,8 +117,8 @@ public class ProdPageStepDef {
     public void userChangesDefaultSortingToList(String view) {
         view = "list";
         ProductsPage page = (ProductsPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
-        page = new ProductsPage(Browser.getBrowser());
         page.selectStyle(view);
+        log.info("List view is selected");
     }
 
     @Then("all the elements are displayed in List style")
@@ -129,13 +130,6 @@ public class ProdPageStepDef {
     @And("the following information is displayed for all the items:")
     public void followingInformationDisplayed(List<String> elementsList) {
         ProductsPage page = (ProductsPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
-
-        elementsList = new ArrayList<String>();
-        elementsList.add("Item title");
-        elementsList.add("Category");
-        elementsList.add("Price");
-        elementsList.add("Description");
-        elementsList.add("Action options");
 
         for (String element : elementsList) {
             switch (element) {
@@ -162,8 +156,8 @@ public class ProdPageStepDef {
     public void usersChangesStyleToGrid(String view) {
         view = "grid";
         ProductsPage page = (ProductsPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
-        page = new ProductsPage(Browser.getBrowser());
         page.selectStyle(view);
+        log.info("Grid view is selected");
     }
 
     @Then("all the items are displayed in Grid style")
@@ -181,8 +175,8 @@ public class ProdPageStepDef {
     @When("the user selects a specific sorting criteria")
     public void userSelectsSortingCriteria() {
         ProductsPage page = (ProductsPage) ScenarioContext.getInstance().getContext(Context.CURRENT_PAGE);
-        page = new ProductsPage(Browser.getBrowser());
         page.selectOrder("price");
+        log.info("Items ordered by price: low to high");
     }
 
     @Then("all the items are ordered according to the selected criterion")
@@ -191,7 +185,7 @@ public class ProdPageStepDef {
         double d;
         List<Double> actualPriceList = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
-            String price = driver.findElement(By.xpath("(//span[@class='woocommerce-Price-amount amount'])[" + a + "]")).getText();
+            String price = Browser.getBrowser().findElement(By.xpath("(//span[@class='woocommerce-Price-amount amount'])[" + a + "]")).getText();
             String[] parts = price.split("₹");
             String part = parts[1];
             d = Double.parseDouble(part);
@@ -209,10 +203,10 @@ public class ProdPageStepDef {
         color = "60";
         size = "65";
         sorting = "price-desc";
-        page = new ProductsPage(Browser.getBrowser());
         page.selectColor(color);
         page.selectSize(size);
         page.selectOrder(sorting);
+        log.info("Color white, size medium and sort by price: high to low selected");
     }
 
     @Then("only the items with that color and size will be displayed")
@@ -222,8 +216,7 @@ public class ProdPageStepDef {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='pa_color']")));
         ATFAssert.assertTrue("No such color for that item", page.getItemColorWhite().isDisplayed(), "Color white available for this item");
         ATFAssert.assertTrue("No such size for that item", page.getItemSizeMedium().isDisplayed(), "Medium size available for this item");
-        page = new ProductsPage(Browser.getBrowser());
-        driver.navigate().back();
+        Browser.getBrowser().navigate().back();
     }
 
     @And("it will be sorted according to the selected criteria")
@@ -232,7 +225,7 @@ public class ProdPageStepDef {
         double d;
         List<Double> actualPriceList = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
-            String price = driver.findElement(By.xpath("(//span[@class='woocommerce-Price-amount amount'])[" + a + "]")).getText();
+            String price = Browser.getBrowser().findElement(By.xpath("(//span[@class='woocommerce-Price-amount amount'])[" + a + "]")).getText();
             String[] parts = price.split("₹");
             String part = parts[1];
             d = Double.parseDouble(part);
