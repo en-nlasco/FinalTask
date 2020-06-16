@@ -7,8 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-
-import java.awt.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

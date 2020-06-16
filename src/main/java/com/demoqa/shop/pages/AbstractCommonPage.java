@@ -1,6 +1,5 @@
 package com.demoqa.shop.pages;
 
-import com.demoqa.shop.util.Browser;
 import com.demoqa.shop.util.ScreenshotUtil;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
