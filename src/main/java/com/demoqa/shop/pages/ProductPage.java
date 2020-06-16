@@ -30,6 +30,9 @@ public class ProductPage extends AbstractCommonPage {
     @FindBy(css = ".yith-wcwl-wishlistaddedbrowse")
     private WebElement iconIsChecked;
 
+    @FindBy(xpath = "//span[contains(text(),'Products')]")
+    private WebElement productsButton;
+
     public ProductPage ( WebDriver driver ) {
         super ( driver );
     }
@@ -78,6 +81,10 @@ public class ProductPage extends AbstractCommonPage {
 
     public WebElement getIconIsChecked () {
         return iconIsChecked;
+    }
+
+    public void clickProductsButton () {
+        productsButton.click ( );
     }
 
 }
