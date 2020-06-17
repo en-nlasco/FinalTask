@@ -3,14 +3,12 @@ package com.demoqa.shop.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class ProductsPage extends BasePage {
 
     public ProductsPage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//body/div[@id='noo-site']//select[@name='filter_color']")
@@ -19,13 +17,11 @@ public class ProductsPage extends BasePage {
     @FindBy(xpath = "(//select[@class = 'noo-woo-filter']//option[contains(text(), 'Filter color')])[1]")
     private WebElement defaultColor;
 
-
     @FindBy(xpath = "//body/div[@id='noo-site']//select[@name='filter_size']")
     private WebElement selectSize;
 
     @FindBy(xpath = "(//select[@class = 'noo-woo-filter']//option[contains(text(), 'Filter size')])[1]")
     private WebElement defaultSize;
-
 
     @FindBy(xpath = "//body/div[@id='noo-site']//select[@name='filter_style']")
     private WebElement selectViewStyle;
@@ -33,16 +29,11 @@ public class ProductsPage extends BasePage {
     @FindBy(xpath = "//div[contains(@class, 'noo-product-item')]")
     private WebElement gridView;
 
-
     @FindBy(xpath = "//body/div[@id='noo-site']//select[@name='orderby']")
     private WebElement selectOrder;
 
     @FindBy(xpath = "(//select[@class = 'orderby']//option[@value='menu_order'])[1]")
     private WebElement defaultOrder;
-
-
-
-    //Elements
 
     @FindBy(xpath = "//p[contains(text(),'41 results')]")
     private WebElement allElements;
@@ -68,7 +59,6 @@ public class ProductsPage extends BasePage {
     @FindBy(xpath = "//div[contains(@class, 'product-list') and contains(@class, 'product-type-variable')]")
     private WebElement listView;
 
-
     @FindBy(xpath = "(//h3//a[contains(@href, 'shop.demoqa.com/product/')])[1]")
     private WebElement itemTitle;
 
@@ -83,7 +73,6 @@ public class ProductsPage extends BasePage {
 
     @FindBy(xpath = "(//div[@class='product-list-meta'])[1]")
     private WebElement actionOptions;
-
 
     public void selectColor(String value) {
         Select dropDown = new Select(selectColor);
@@ -104,9 +93,6 @@ public class ProductsPage extends BasePage {
         Select dropDown = new Select(selectOrder);
         dropDown.selectByValue(value);
     }
-
-
-    // Getters for Elements
 
     public WebElement getDefaultColor() {
         return defaultColor;
@@ -175,8 +161,6 @@ public class ProductsPage extends BasePage {
     public WebElement getActionOptions() {
         return actionOptions;
     }
-
-
 
     @Override
     public String getUrl() {

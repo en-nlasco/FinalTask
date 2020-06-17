@@ -1,5 +1,4 @@
-#@Run
-#@Before
+@Run
 Feature: Modify account
 
   Background:
