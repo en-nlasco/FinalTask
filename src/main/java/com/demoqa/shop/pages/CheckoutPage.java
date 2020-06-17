@@ -224,10 +224,6 @@ public class CheckoutPage extends BasePage {
         return billingAddressTextField;
     }
 
-    public WebElement getCityTextField() {
-        return cityTextField;
-    }
-
     public WebElement getPostCodeTextField() {
         return postCodeTextField;
     }
