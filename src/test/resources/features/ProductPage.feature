@@ -1,4 +1,4 @@
-@Run
+#@Run
 Feature: Product page filters
 
  Background:

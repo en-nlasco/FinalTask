@@ -9,6 +9,13 @@ import java.util.List;
 
 public class ProductPage extends AbstractCommonPage {
 
+    public ProductPage ( WebDriver driver ) {
+        super ( driver );
+    }
+
+    @FindBy (xpath = "//span[normalize-space() = \"Product added!\"]" )
+    private WebElement iconUnchecked;
+
     @FindBy(xpath = "//select[@id='pa_size']")
     private WebElement sizeDropdown;
 
@@ -33,9 +40,6 @@ public class ProductPage extends AbstractCommonPage {
     @FindBy(xpath = "//span[contains(text(),'Products')]")
     private WebElement productsButton;
 
-    public ProductPage ( WebDriver driver ) {
-        super ( driver );
-    }
 
     @Override
     public String getUrl () {
@@ -46,6 +50,8 @@ public class ProductPage extends AbstractCommonPage {
     public String getTitle () {
         return "Product Page";
     }
+
+    public WebElement getIconUnchecked (){ return iconUnchecked; }
 
     public void selectColor ( String color ) {
         new Select ( colorDropdown ).selectByValue ( color );

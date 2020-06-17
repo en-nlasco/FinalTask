@@ -11,7 +11,7 @@ public class CreateReport {
 
     public void generateReportForJsonFiles(File reportOutputDirectory, List<String> jsonFiles) {
         String buildNumber = "1";
-        String projectName = "School_Of_Automation_iteration2";
+        String projectName = "Final Task";
         Configuration configuration = new Configuration(reportOutputDirectory, projectName);
         configuration.setParallelTesting(false);
         configuration.setBuildNumber(buildNumber);

@@ -9,14 +9,12 @@ import java.util.List;
 
 public class MyWishlistPage extends AbstractCommonPage {
 
+    public MyWishlistPage ( WebDriver driver ) {
+        super ( driver );
+    }
+
     @FindBy(css = "tbody.wishlist-items-wrapper tr")
     private List < WebElement > numberOfItems;
-
-    @FindBy(css = "div.first.product_cat-t-shirt")
-    private WebElement firstItem;
-
-    @FindBy(css = "div.last.product_cat-t-shirt")
-    private WebElement lastItem;
 
     @FindBy(css = ".remove.remove_from_wishlist")
     private List < WebElement > removeFromWishlistButton;
@@ -27,20 +25,6 @@ public class MyWishlistPage extends AbstractCommonPage {
     @FindBy(css = ".woocommerce-message")
     private WebElement successfullMessageOfRemoveFromWishlist;
 
-    public MyWishlistPage ( WebDriver driver ) {
-        super ( driver );
-        PageFactory.initElements ( driver , this );
-
-    }
-
-    public WebElement getFirstRemoveButtonFromWL () {
-
-        return removeFromWishlistButton.get ( 0 );
-    }
-
-    public WebElement getSuccessfullMessageOfRemoveFromWishlist () {
-        return successfullMessageOfRemoveFromWishlist;
-    }
 
     @Override
     public String getUrl () {
@@ -52,23 +36,14 @@ public class MyWishlistPage extends AbstractCommonPage {
         return "My Wishlist Page";
     }
 
-    public void clickProductLink () {
-        productLink.click ( );
-    }
 
-    public void clickFirstItem () {
-        firstItem.click ( );
-    }
+    public void clickProductLink () { productLink.click ( ); }
 
-    public void clickSecondItem () {
-        lastItem.click ( );
-    }
+    public void clickRemoveButtonFromWishlistPage () { getFirstRemoveButtonFromWL ( ).click ( ); }
 
-    public void clickRemoveButtonFromWishlistPage () {
-        getFirstRemoveButtonFromWL ( ).click ( );
-    }
+    public int countNumberOfItems () { return numberOfItems.size ( ); }
 
-    public int countNumberOfItems () {
-        return numberOfItems.size ( );
-    }
+    public WebElement getFirstRemoveButtonFromWL () { return removeFromWishlistButton.get ( 0 ); }
+
+    public WebElement getSuccessfullMessageOfRemoveFromWishlist () { return successfullMessageOfRemoveFromWishlist; }
 }

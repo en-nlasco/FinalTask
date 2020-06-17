@@ -1,4 +1,4 @@
-#@Run
+@Run
 Feature: Manage 'Wish List' functionality on shop.demoqa.com
 
   Background:
@@ -24,6 +24,7 @@ Feature: Manage 'Wish List' functionality on shop.demoqa.com
     When user uncheck wishlist icon
     And icon is unchecked
     And user clicks on My Wishlist link
+    And 'My Wishlist' page is displayed
     Then 0 item is displayed
 
 

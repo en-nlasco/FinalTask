@@ -14,7 +14,7 @@ Feature: Checkout page
     When User click on 'Proceed checkout' button
     Then 'Checkout' page is displayed
 
-  @Run
+#  @Run
   Scenario: User can place an order without being logged in
     Given Mandatory fields are filled with valid data
       | First name     | Jim                   |

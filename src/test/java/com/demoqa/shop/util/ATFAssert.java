@@ -24,4 +24,9 @@ public class ATFAssert {
         log.info("assert that " + expectedMessage);
         Assert.assertEquals(message, expected, actual);
     }
+
+    public static void assertNotNull(Object condition, String message, String expectedMessage) {
+        log.info("assert that " + expectedMessage + " is not null");
+        Assert.assertNotNull (message, condition);
+    }
 }

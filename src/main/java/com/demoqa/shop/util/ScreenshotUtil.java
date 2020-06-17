@@ -30,11 +30,13 @@ public class ScreenshotUtil {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern ( "yyyy-MM-dd HH_mm_ss" );
         String formatDateTime = now.format ( formatter );
         byte[] source = ts.getScreenshotAs ( OutputType.BYTES );
-        scenario.embed ( source , "image/png" );
+        String fileName =  name + formatDateTime + ".png";
+        scenario.embed
+                ( source , "image/png" , fileName);
         Path scenarioPath = Paths.get ( new File ( "target/screenshot/" + scenarioName + "/" ).getPath ( ) );
         try {
             Files.createDirectories ( scenarioPath );
-            Files.write ( scenarioPath.resolve ( name + formatDateTime + ".png" ) , source );
+            Files.write ( scenarioPath.resolve ( fileName ) , source );
         } catch (IOException e) {
             log.error ( "Fail to save screenshot" + e.getMessage ( ) );
         }
