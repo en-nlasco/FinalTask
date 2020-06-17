@@ -1,10 +1,7 @@
 package com.demoqa.shop.steps;
 
 import com.demoqa.shop.pages.*;
-import com.demoqa.shop.util.ATFAssert;
-import com.demoqa.shop.util.Browser;
-import com.demoqa.shop.util.Context;
-import com.demoqa.shop.util.ScenarioContext;
+import com.demoqa.shop.util.*;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -58,6 +55,7 @@ public class CommonSteps {
                 throw new IllegalStateException("Unexpected value for page name: " + string.toLowerCase());
         }
         ATFAssert.assertTrue("Wrong page is displayed",currentURL.contains(page.getUrl()),string.concat(" is displayed"));
+        ScreenshotUtil.takeScreenshot ( string );
         ScenarioContext.getInstance().setContext(Context.CURRENT_PAGE, page);
     }
 }

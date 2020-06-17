@@ -1,10 +1,7 @@
 package com.demoqa.shop.steps;
 
 import com.demoqa.shop.pages.*;
-import com.demoqa.shop.util.Browser;
-import com.demoqa.shop.util.Context;
-import com.demoqa.shop.util.ScenarioContext;
-import com.demoqa.shop.util.ScreenshotUtil;
+import com.demoqa.shop.util.*;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
@@ -25,21 +22,25 @@ public class MyStepdefsT {
         HomePage homePage = (HomePage) ScenarioContext.getInstance ( ).getContext ( Context.CURRENT_PAGE );
         homePage.clickWishlistIconOnHomePage ( );
         ScreenshotUtil.takeScreenshot ( "HomePageScreen" );
+        List < WebElement > addedProducts = Browser.getBrowser ( ).findElements ( By.cssSelector ( ".exists" ) );
+        ATFAssert.assertTrue ( "Item is not added to wishlist from Home Page",addedProducts.size () > 0 , "Item is added to Wishlist" );
     }
 
 
     @When("user clicks on My Wishlist link")
     public void userGoToMyWishlistPage ( ) {
-        BasePage page = (BasePage)ScenarioContext.getInstance ().getContext ( Context.CURRENT_PAGE );
-        ((AbstractCommonPage)page).goToMyWishListPage ();
+        AbstractCommonPage page = (AbstractCommonPage) ScenarioContext.getInstance ().getContext ( Context.CURRENT_PAGE );
+        ScreenshotUtil.scrollToTop ();
+        page.goToMyWishListPage ();
     }
 
     @Then("{int} item is displayed")
     public void addedItemIsDisplayed ( int countOfItem ) {
-        List < WebElement > optionCount = Browser.getBrowser ( ).findElements ( By.cssSelector ( "tbody.wishlist-items-wrapper tr" ) );
-        log.info ( "actual result is" + optionCount.size ( ) );
-        // ScreenshotUtil.takeScreenshot ( "1 items in cart" );
-        assertEquals ( countOfItem , optionCount.size ( ) );
+        MyWishlistPage myWishlistPage = (MyWishlistPage) ScenarioContext.getInstance ().getContext ( Context.CURRENT_PAGE );
+        int numberofItems = myWishlistPage.countNumberOfItems ();
+        log.info ( "actual result is" + numberofItems);
+        ScreenshotUtil.takeScreenshot ( "1 item is displayed" );
+        ATFAssert.assertEquals ( countOfItem , numberofItems, "The amount of items is incorrect", "The amount of items is correct" );
     }
 
 
@@ -55,11 +56,13 @@ public class MyStepdefsT {
         assertTrue ( productPage.getIconIsChecked ( ) != null , "Item is marked as added to Wishlist" );
     }
 
-    @When("user go back to product page")
+    @Then ("user go back to product page")
     public void userGoBackToProductPage () {
         MyWishlistPage myWishlistPage = (MyWishlistPage) ScenarioContext.getInstance ( ).getContext ( Context.CURRENT_PAGE );
         myWishlistPage.clickProductLink ( );
         ScenarioContext.getInstance ( ).setContext ( Context.CURRENT_PAGE , new ProductPage ( Browser.getBrowser ( ) ) );
+        ProductPage page = (ProductPage) ScenarioContext.getInstance ().getContext ( Context.CURRENT_PAGE );
+        ATFAssert.assertEquals ( "Product Page", page.getTitle (), "Product Page is NOT displayed", "Product Page is displayed" );
     }
 
     @When("user uncheck wishlist icon")
@@ -70,59 +73,67 @@ public class MyStepdefsT {
 
     @Then("icon is unchecked")
     public void iconIsUnchecked () {
-        WebElement webElement = Browser.getBrowser ( ).findElement ( By.cssSelector ( ".single-product-content .yith-wcwl-add-button" ) );
-        assertTrue ( webElement != null , "Item is not marked as added to Wishlist" );
+        ProductPage page = (ProductPage) ScenarioContext.getInstance ().getContext ( Context.CURRENT_PAGE );
+        ATFAssert.assertTrue ( "Item is marked as added to Wishlist ", page.getIconUnchecked ().isDisplayed (), "Icon is unchecked");
     }
 
     @When("user click on search input field")
     public void userClickOnSearchInputField () {
         HomePage homePage = (HomePage) ScenarioContext.getInstance ( ).getContext ( Context.CURRENT_PAGE );
         homePage.openSearchField ( );
+        ATFAssert.assertNotNull ( homePage.getSearchIcon(), "", "" );
     }
 
     @When("user searches {string} category")
     public void userEnterTheDressCategory ( String string ) {
         HomePage homePage = (HomePage) ScenarioContext.getInstance ( ).getContext ( Context.CURRENT_PAGE );
         homePage.setSearchField ( string );
-
-        log.info ( "Category name is insert" );
+        ScenarioContext.getInstance ( ).setContext ( Context.CURRENT_PAGE , new SearchResultPage ( Browser.getBrowser ( ) ) );
+        SearchResultPage page = (SearchResultPage) ScenarioContext.getInstance ().getContext ( Context.CURRENT_PAGE );
+        ATFAssert.assertEquals ( "Search Result Page", page.getTitle (), "Search Result Page IS NOT displayed", "Search Result Page IS displayed" );
     }
 
     @When("user add to wishlist two items")
-    public void userAddToWishlistTwoItems () {
+    public void userAddToWishlistTwoItems () throws InterruptedException {
         SearchResultPage searchResultPage = (SearchResultPage) ScenarioContext.getInstance ( ).getContext ( Context.CURRENT_PAGE );
         searchResultPage.addFirstCategoryItemToWL ( );
+        Thread.sleep(1000);
         searchResultPage.addSecondCategoryItemToWL ( );
-//        ScreenshotUtil.takeScreenshot ( "HomePageScreen" );
+        Thread.sleep(1000);
+        Integer actual = searchResultPage.addedToWishlistItemsCount ();
+        ATFAssert.assertEquals ( 2, actual, "Two items are NOT added ", "Two items are added" );
     }
 
     @When("remove first item")
-    public void removeOneItem () {
+    public void removeOneItem () throws InterruptedException {
         MyWishlistPage myWishlistPage = (MyWishlistPage) ScenarioContext.getInstance ( ).getContext ( Context.CURRENT_PAGE );
         myWishlistPage.clickRemoveButtonFromWishlistPage ( );
-
+        Thread.sleep(1000);
+        ATFAssert.assertEquals ( 1, myWishlistPage.countNumberOfItems(), "Items IS NOT removed ", "Items IS removed" );
     }
 
     @Then("the list immediately renewed itself")
     public void theListImmediatelyRenewedItself () {
         Browser.getBrowser ( ).navigate ( ).refresh ( );
+        MyWishlistPage myWishlistPage = (MyWishlistPage) ScenarioContext.getInstance ( ).getContext ( Context.CURRENT_PAGE );
+        ATFAssert.assertEquals ( 1, myWishlistPage.countNumberOfItems(), "Items IS NOT removed ", "Items IS removed" );
     }
 
     @Then("successfully message is displayed")
     public void successfullyMessageIsDisplayed () {
         MyWishlistPage myWishlistPage = (MyWishlistPage) ScenarioContext.getInstance ( ).getContext ( Context.CURRENT_PAGE );
-        assertNotNull ( myWishlistPage.getSuccessfullMessageOfRemoveFromWishlist ( ) , "Success Message is Displayed" );
+        ATFAssert.assertNotNull ( myWishlistPage.getSuccessfullMessageOfRemoveFromWishlist ( ) , "Success Message is NOT Displayed", "Success Message is Displayed" );
     }
 
     @When("Wishlist icon is checked")
     public void wishlistIconIsChecked () {
         ProductPage productPage = (ProductPage) ScenarioContext.getInstance ( ).getContext ( Context.CURRENT_PAGE );
-        assertNotNull ( productPage.getIconIsChecked ( ) , "Item is not marked as added to Wishlist" );
+        ATFAssert.assertNotNull ( productPage.getIconIsChecked ( ) , "Item is unchecked",  "Item is checked" );
     }
 
     @Then("input form is displayed")
     public void inputFormIsDisplayed () {
         HomePage homePage = (HomePage) ScenarioContext.getInstance ( ).getContext ( Context.CURRENT_PAGE );
-        assertTrue ( homePage.searchFieldIsDisplayed ( ) , "Search field is displayed" );
+        ATFAssert.assertTrue ( "Search field IS NOT displayed", homePage.searchFieldIsDisplayed ( ) , "Search field is displayed" );
     }
 }

@@ -73,6 +73,7 @@ public class HomePage extends AbstractCommonPage {
         return lnk_Dismiss;
     }
 
+    public WebElement getSearchIcon () { return searchIcon; }
 
     public HomePage ( WebDriver driver ) {
         super ( driver );

@@ -1,4 +1,4 @@
-@Run
+#@Run
 Feature: Scenarios for Cart functionality
 
   Background:
